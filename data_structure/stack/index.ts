@@ -1,4 +1,4 @@
-const stack = [];
+const stack: Array<Number> = [];
 stack.push(1); //入栈
 stack.push(2); //入栈
 
