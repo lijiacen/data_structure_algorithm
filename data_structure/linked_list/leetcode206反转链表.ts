@@ -1,43 +1,45 @@
-class ListNode {
-  val: number;
-  next: ListNode | null;
-  constructor(val?: number, next?: ListNode | null) {
-    this.val = val === undefined ? 0 : val;
-    this.next = next === undefined ? null : next;
-  }
-}
-
-let e: ListNode = {
-  val: 5,
-  next: null
-};
-let d: ListNode = {
-  val: 4,
-  next: e
-};
-let c: ListNode = {
-  val: 3,
-  next: d
-};
-let b: ListNode = {
-  val: 2,
-  next: c
-};
-let head: ListNode = {
-  val: 1,
-  next: b
-};
-
-function reverseList(head: ListNode | null): ListNode | null {
-  let p1 = head;
-  let p2 = null;
-  while (p1) {
-    let temp = p1.next;
-    p1.next = p2;
-    p2 = p1;
-    p1 = temp;
+namespace leetcode206 {
+  class ListNode {
+    val: number;
+    next: ListNode | null;
+    constructor(val?: number, next?: ListNode | null) {
+      this.val = val === undefined ? 0 : val;
+      this.next = next === undefined ? null : next;
+    }
   }
 
-  return p2;
+  let e: ListNode = {
+    val: 5,
+    next: null
+  };
+  let d: ListNode = {
+    val: 4,
+    next: e
+  };
+  let c: ListNode = {
+    val: 3,
+    next: d
+  };
+  let b: ListNode = {
+    val: 2,
+    next: c
+  };
+  let head: ListNode = {
+    val: 1,
+    next: b
+  };
+
+  function reverseList(head: ListNode | null): ListNode | null {
+    let p1 = head;
+    let p2 = null;
+    while (p1) {
+      let temp = p1.next;
+      p1.next = p2;
+      p2 = p1;
+      p1 = temp;
+    }
+
+    return p2;
+  }
+  console.log(reverseList(head));
 }
-console.log(reverseList(head));
