@@ -1,13 +1,5 @@
+import { ListNode } from "./ListNode";
 namespace leetcode203 {
-  class ListNode {
-    val: number;
-    next: ListNode | null;
-    constructor(val?: number, next?: ListNode | null) {
-      this.val = val === undefined ? 0 : val;
-      this.next = next === undefined ? null : next;
-    }
-  }
-
   function removeElements(head: ListNode | null, val: number): ListNode | null {
     let result = new ListNode(0, head);
     let p = result;
