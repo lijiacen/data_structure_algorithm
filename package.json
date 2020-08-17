@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lijiacen/data_structure_algorithm/issues"
   },
-  "homepage": "https://github.com/lijiacen/data_structure_algorithm#readme"
+  "homepage": "https://github.com/lijiacen/data_structure_algorithm#readme",
+  "devDependencies": {
+    "@types/node": "^14.0.27"
+  }
 }
