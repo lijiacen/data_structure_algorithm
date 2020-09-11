@@ -1,4 +1,3 @@
-//最小堆类
 class MinHeap {
   constructor() {
     this.heap = [];
@@ -68,11 +67,14 @@ class MinHeap {
   }
 }
 
-const h = new MinHeap();
-h.insert(3);
-h.insert(2);
-h.insert(1);
-console.log(h.size());
-console.log(h.peek());
-h.pop();
-console.log(h.peek());
+//最小堆类
+module.exports = MinHeap;
+
+// const h = new MinHeap();
+// h.insert(3);
+// h.insert(2);
+// h.insert(1);
+// console.log(h.size());
+// console.log(h.peek());
+// h.pop();
+// console.log(h.peek());
